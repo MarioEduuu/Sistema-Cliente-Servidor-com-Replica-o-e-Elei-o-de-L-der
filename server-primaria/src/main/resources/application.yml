@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: server-primaria
+
+server:
+  port: 8081
+
+node:
+  id: primary
+  role: PRIMARY
+  peers: http://localhost:8082,http://localhost:8083
+
+storage:
+  file: data/database.txt
+
+request:
+  timeout:
+    ms: 1500
